@@ -59,3 +59,21 @@
 ## License
 
 MIT
+---
+
+## English
+
+**AIKey Plus** turns the Xiaomi / Redmi **AI button** into a customizable gesture key (single / double / triple click / long press).
+
+Running inside `system_server` via LSPosed, it dispatches MIUI's own native actions through
+`ShortCutActionsUtils#triggerFunction`, so it can trigger payment codes, transit codes, scanners, peep protection,
+mute, screenshots, rear-screen capture, camera and Xiao Ai functions — 80+ actions in total, plus arbitrary shell commands.
+
+- Runtime: LSPosed (scope: **System Framework**), root for shell-based actions
+- Tested on Xiaomi 18 Pro / HyperOS OS4.0.27 / Android 17 (AI key = keycode 690)
+- Source & issues: https://github.com/jumaoli/aikey-plus-lsp
+- License: MIT
+
+### Install
+
+Install the APK → enable in LSPosed with the System Framework scope → reboot → open the app, tap Apply, grant root → pick actions.
